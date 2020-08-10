@@ -38,15 +38,16 @@ class Count extends Component {
     }
 
     resetAddOne = () => {
-    
+        clearInterval(this.stopCountOne)
         this.setState({
             countOne: 0
         })
     }
 
     resetAddTwo = () => {
+        clearInterval(this.stopCountTwo)
         this.setState({
-            myCountTwo: 0
+            countTwo: 0
         })
     }
 
@@ -64,7 +65,7 @@ class Count extends Component {
         if(countOne === 0) {
             resetBtnAddOne = ""
         } else {
-            resetBtnAddOne =  <button className="btn btn-info" onClick={this.resetAddTwo} >RESET</button>
+            resetBtnAddOne =  <button className="btn btn-info" onClick={this.resetAddOne} >RESET</button>
         }
 
         let resetBtnAddTwo;

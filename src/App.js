@@ -6,6 +6,7 @@ import TestState from './components/TestState';
 import CountOne from './components/CountOne';
 import CountTwo from './components/CountTwo';
 import Count from './components/Count';
+import Post from './components/Post';
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +27,8 @@ class App extends Component {
         {/* <TestState /> */}
         {/* <CountOne />
         <CountTwo /> */}
-        <Count />
+        {/* <Count /> */}
+        <Post />
       </div>
     );
 
