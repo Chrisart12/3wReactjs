@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import './App.css';
-import ListDragon from './components/ListDragon';
-import ListKnight from './components/ListKnight';
+import './App.scss';
+// import ListDragon from './components/ListDragon';
+// import ListKnight from './components/ListKnight';
 import TestState from './components/TestState';
+import CountOne from './components/CountOne';
+import CountTwo from './components/CountTwo';
 
 class App extends Component {
   constructor(props) {
@@ -13,15 +15,16 @@ class App extends Component {
     }
   }
 
-  
 
   render() {
     
     return (
-      <div className="App">
+      <div className="container" style={{ display: "flex", justifyContent: "space-between" }}>
         {/* <ListDragon />
         <ListKnight /> */}
-        <TestState />
+        {/* <TestState /> */}
+        <CountOne />
+        <CountTwo />
       </div>
     );
 
