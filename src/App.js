@@ -5,6 +5,7 @@ import './App.scss';
 import TestState from './components/TestState';
 import CountOne from './components/CountOne';
 import CountTwo from './components/CountTwo';
+import Count from './components/Count';
 
 class App extends Component {
   constructor(props) {
@@ -19,12 +20,13 @@ class App extends Component {
   render() {
     
     return (
-      <div className="container" style={{ display: "flex", justifyContent: "space-between" }}>
+      <div >
         {/* <ListDragon />
         <ListKnight /> */}
         {/* <TestState /> */}
-        <CountOne />
-        <CountTwo />
+        {/* <CountOne />
+        <CountTwo /> */}
+        <Count />
       </div>
     );
 

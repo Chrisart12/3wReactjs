@@ -38,20 +38,21 @@ class CountOne extends Component {
     render() {
         const { countOne } = this.state
 
-        // let resetBtnAddTwo;
+        let resetBtnAddOne;
 
-        // if(countOne === 0) {
-        //     resetBtnAddOne = ""
-        // } else {
-        //     resetBtnAddTwo =  <button className="btn btn-info" onClick={this.resetAddTwo} >RESET</button>
-        // }
+        if(countOne === 0) {
+            resetBtnAddOne = ""
+        } else {
+            resetBtnAddOne =  <button className="btn btn-info" onClick={this.resetAddTwo} >RESET</button>
+        }
 
         return (
             <div>
                 <h1>{countOne} </h1>
                 <button className="btn btn-primary" onClick={this.addOne} >ADD 1</button>
                 <button className="btn btn-danger" onClick={this.stopAddOne} >STOP</button>
-                {/* { resetBtnAddOne} */}
+                { resetBtnAddOne}
+
             </div>
         )
     }
