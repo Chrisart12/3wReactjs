@@ -7,6 +7,7 @@ import CountOne from './components/CountOne';
 import CountTwo from './components/CountTwo';
 import Count from './components/Count';
 import Post from './components/Post';
+import Checkerboard from './components/Checkerboard';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,8 @@ class App extends Component {
         {/* <CountOne />
         <CountTwo /> */}
         {/* <Count /> */}
-        <Post />
+        {/* <Post /> */}
+        <Checkerboard />
       </div>
     );
 
